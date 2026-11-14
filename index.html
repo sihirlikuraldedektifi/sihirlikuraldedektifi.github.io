@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sihirli Kural Dedektifi · Magic Rule Detective</title>
+<meta name="description" content="4-10 yaş için eğitici çocuk oyunu: sesli soru-cevap, masallar, ninniler, boyama, maske tasarımı ve nostaljik oyunlar.">
+<style>
+  :root {
+    --bg: #f6f3ff;
+    --card: #ffffff;
+    --ink: #2a2350;
+    --muted: #6b6390;
+    --accent: #6c4ee0;
+    --accent-2: #12a07a;
+    --line: #e4def8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.55;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 20px 48px; }
+  .lang { display: flex; gap: 8px; justify-content: flex-end; }
+  .lang button {
+    border: 1px solid var(--line); background: var(--card); color: var(--muted);
+    padding: 6px 12px; border-radius: 999px; cursor: pointer; font: inherit; font-size: 14px;
+  }
+  .lang button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  header { text-align: center; padding: 32px 0 8px; }
+  .badge { font-size: 56px; line-height: 1; }
+  h1 { margin: 12px 0 4px; font-size: 32px; }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+  .cta {
+    display: inline-block; background: var(--accent-2); color: #fff; text-decoration: none;
+    padding: 14px 26px; border-radius: 14px; font-weight: 600;
+  }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+    padding: 20px 24px; margin-top: 20px;
+  }
+  .card h2 { margin: 0 0 10px; font-size: 20px; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin: 6px 0; }
+  .story { font-style: italic; color: var(--muted); }
+  footer { margin-top: 32px; text-align: center; color: var(--muted); font-size: 14px; }
+  footer a { color: var(--accent); }
+  [data-lang] { display: none; }
+  [data-lang].on { display: block; }
+  span[data-lang].on { display: inline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="lang" aria-label="Dil / Sprache / Language">
+    <button type="button" data-set="tr">Türkçe</button>
+    <button type="button" data-set="de">Deutsch</button>
+    <button type="button" data-set="en">English</button>
+  </nav>
+
+  <header>
+    <div class="badge" aria-hidden="true">🔍✨</div>
+    <h1>
+      <span data-lang="tr">Sihirli Kural Dedektifi</span>
+      <span data-lang="de">Magic Rule Detective</span>
+      <span data-lang="en">Magic Rule Detective</span>
+    </h1>
+    <p class="sub">
+      <span data-lang="tr">4-10 yaş için eğlenceli ve eğitici bir oyun</span>
+      <span data-lang="de">Ein lustiges Lernspiel für Kinder von 4 bis 10 Jahren</span>
+      <span data-lang="en">A fun, educational game for kids aged 4 to 10</span>
+    </p>
+    <a class="cta" href="https://play.google.com/store/apps/details?id=com.milmil.sihirlikuraldedektifi">
+      <span data-lang="tr">Google Play'den indir</span>
+      <span data-lang="de">Bei Google Play laden</span>
+      <span data-lang="en">Get it on Google Play</span>
+    </a>
+  </header>
+
+  <section class="card">
+    <p class="story" data-lang="tr">Bu oyunu 3 yaşındaki oğlumla birlikte tasarladık; karakterlerin isimlerini bile o koydu.</p>
+    <p class="story" data-lang="de">Dieses Spiel habe ich gemeinsam mit meinem dreijährigen Sohn entworfen – sogar die Namen der Figuren hat er ausgesucht.</p>
+    <p class="story" data-lang="en">I designed this game together with my 3-year-old son, who even named all the characters.</p>
+  </section>
+
+  <section class="card">
+    <div data-lang="tr">
+      <h2>Oyunda neler var?</h2>
+      <ul>
+        <li>Karakterle neşeli, sesli ve interaktif soru-cevap</li>
+        <li>Hikâye macerasında öğrenme ve masal dinleme</li>
+        <li>Kostüm odası, özel gardırop ve aksesuarlarla karakter giydirme</li>
+        <li>Boyama ve maske tasarımı; boyanan karakter oyunda kullanılıyor</li>
+        <li>Kart eşleştirme ve kartların durduğu albüm</li>
+        <li>Topaç, bilye, taso, gazoz kapağı gibi nostaljik oyunlar</li>
+      </ul>
+    </div>
+    <div data-lang="de">
+      <h2>Was erwartet dein Kind?</h2>
+      <ul>
+        <li>Fröhliche, gesprochene Quizfragen mit der eigenen Figur</li>
+        <li>Lernen und Märchen hören im Geschichtenabenteuer</li>
+        <li>Kostümzimmer, Kleiderschrank und Accessoires zum Anziehen</li>
+        <li>Malen und Masken gestalten – die bemalte Figur spielt mit</li>
+        <li>Memory-Karten und ein Album zum Sammeln</li>
+        <li>Klassische Kinderspiele wie Kreisel und Murmeln</li>
+      </ul>
+    </div>
+    <div data-lang="en">
+      <h2>What's inside?</h2>
+      <ul>
+        <li>A cheerful, talking quiz with your own character</li>
+        <li>Learning and story time in a story adventure</li>
+        <li>A costume room, wardrobe and accessories for dress-up</li>
+        <li>Colouring and mask design, then play as the character you made</li>
+        <li>Memory card matching and an album to collect them in</li>
+        <li>Classic childhood games like spinning tops and marbles</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <div data-lang="tr">
+      <h2>Ebeveynler için</h2>
+      <ul>
+        <li>Günlük oyun süresi ayarı</li>
+        <li>Oyun sırasında göz dinlendirme ve nefes egzersizli "sağlıklı dedektif molası"</li>
+        <li>Yatmadan önce uyku rutini, ninni ve masal dinleme</li>
+        <li>Tek kişilik; sohbet özelliği yok, çocuklardan kişisel veri toplanmıyor</li>
+        <li>Ücretsiz; tek seferlik satın alımla reklamsız</li>
+      </ul>
+    </div>
+    <div data-lang="de">
+      <h2>Für Eltern</h2>
+      <ul>
+        <li>Einstellbare tägliche Spielzeit</li>
+        <li>Gesunde „Detektiv-Pause“ mit Augenentspannung und Atemübungen</li>
+        <li>Einschlafroutine mit Schlafliedern und Gute-Nacht-Geschichten</li>
+        <li>Für ein Kind; keine Chatfunktion, keine persönlichen Daten von Kindern</li>
+        <li>Kostenlos; mit einem einmaligen Kauf werbefrei</li>
+      </ul>
+    </div>
+    <div data-lang="en">
+      <h2>For parents</h2>
+      <ul>
+        <li>Daily play time limit</li>
+        <li>A healthy "detective break" with eye-rest and breathing exercises</li>
+        <li>Bedtime routine with lullabies and stories</li>
+        <li>Single player; no chat, no personal data collected from children</li>
+        <li>Free; a one-time purchase removes all ads</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      <a href="https://sites.google.com/view/sihirli-kural-dedektifi/ana-sayfa">
+        <span data-lang="tr">Gizlilik Politikası</span>
+        <span data-lang="de">Datenschutzerklärung</span>
+        <span data-lang="en">Privacy Policy</span>
+      </a>
+      ·
+      <a href="mailto:minikmilmil@gmail.com">
+        <span data-lang="tr">İletişim</span>
+        <span data-lang="de">Kontakt</span>
+        <span data-lang="en">Contact</span>
+      </a>
+    </p>
+    <p>© 2026 milmil</p>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var supported = ["tr", "de", "en"];
+    function pick() {
+      var saved = null;
+      try { saved = localStorage.getItem("lang"); } catch (e) {}
+      if (saved && supported.indexOf(saved) !== -1) return saved;
+      var nav = (navigator.language || "tr").slice(0, 2).toLowerCase();
+      return supported.indexOf(nav) !== -1 ? nav : "en";
+    }
+    function apply(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-lang]").forEach(function (el) {
+        el.classList.toggle("on", el.getAttribute("data-lang") === lang);
+      });
+      document.querySelectorAll(".lang button").forEach(function (b) {
+        b.setAttribute("aria-pressed", b.getAttribute("data-set") === lang ? "true" : "false");
+      });
+      try { localStorage.setItem("lang", lang); } catch (e) {}
+    }
+    document.querySelectorAll(".lang button").forEach(function (b) {
+      b.addEventListener("click", function () { apply(b.getAttribute("data-set")); });
+    });
+    apply(pick());
+  })();
+</script>
+</body>
+</html>
